@@ -16,7 +16,7 @@ const MealSingle = ({meal}) => {
   return (
     <div className='section-wrapper'>
       <div className='container'>
-        <div className='breadcrumb bg-orange text-white'>
+        <div className='breadcrumb bg-orange text-black'>
           <ul className='flex align-center my-2'>
             <li className='breadcrumb-item'>
               <Link to = "/" className='flex align-center'>

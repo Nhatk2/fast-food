@@ -17,7 +17,7 @@ const CategoryList = ({categories}) => {
                     <div className='category-itm-img h-100 w-100 flex align-center justify-center'>
                       <img src = {thumbnail} alt = {title} />
                       <div className='category-itm-title bg-orange'>
-                        <h3 className='text-white fs-11 fw-6 ls-1 text-uppercase'>{title}</h3>
+                        <h3 className='text-black fs-11 fw-6 ls-1 text-uppercase'>{title}</h3>
                       </div>
                     </div>
                   </Link>

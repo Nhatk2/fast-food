@@ -8,6 +8,12 @@ import { useSidebarContext } from '../../context/sidebarContext';
 const Navbar = () => {
   const {openSidebar} = useSidebarContext();
   const [scrolled, setScrolled] = useState(false);
+  const [isLoggedOn, setIsLoggedOn] = useState(true);
+
+
+  const toggleLogon = () => {
+    setIsLoggedOn(!isLoggedOn);
+  };
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -31,12 +37,18 @@ const Navbar = () => {
               <MdFoodBank />
               <span className='navbar-brand-text fw-7'>Fast Food</span>
             </Link>
-            <div className='navbar-btns flex align-center'>
+            <div className='navbar-btns flex align-center '>
               <button type = "button" className='navbar-show-btn text-white' onClick={() => openSidebar()}>
                 <IoMdMenu size = {27} />
               </button>
+              
+            {isLoggedOn ? (
+                  <Link to="/login" onClick={toggleLogon} className='fw-7'>Log On</Link>
+                ) : (
+                  <Link to="/register" onClick={toggleLogon} className='fw-7'>Register</Link>
+                )}
             </div>
-          </div>
+            </div>
         </div>
       </div>
     </nav>

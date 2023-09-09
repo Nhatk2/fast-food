@@ -1,0 +1,35 @@
+
+.border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(175, 173, 173);
+    width: 300px;
+    padding: 5px 12px;
+    margin: auto;
+    margin-bottom: 3rem;
+    ::placeholder{
+        color: #c9c7c7;
+    }
+    border-radius: 15px;
+}
+.form{
+    display: flex;
+    justify-content: center; /* Để căn giữa theo chiều ngang */
+    align-items: center; /* Để căn giữa theo chiều dọc */
+    height: 60vh; /* Để biểu mẫu chiếm toàn bộ chiều cao của màn hình */
+  }
+  
+  .login-form {
+    text-align: center;
+    /* Cài đặt của biểu mẫu, ví dụ: */
+    width: 500px; /* Độ rộng của biểu mẫu */
+    padding: 40px;
+    border: 1px solid #ccc;
+  }
+  .mr{
+    margin-right: 12px;
+  }
+  span{
+    cursor: pointer;
+  }
